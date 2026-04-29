@@ -110,6 +110,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+em {
+  font-style: italic;
+}
+
 ol,
 ul {
   list-style: none;
@@ -192,8 +196,12 @@ table.schedule {
   }
 
   tr {
-    td:first-child {
+    td:not(:has(details)):first-child {
       padding-left: 3px;
+      width: 100px;
+    }
+    td:not(:has(details)):last-child {
+      width: 215px;
     }
   }
 

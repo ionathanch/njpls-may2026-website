@@ -347,7 +347,7 @@
               <p>
                 Interior pointers are a cornerstone of systems programming, used to surgically manipulate both data structures and raw bytes, as well as to express low-level APIs. However, unrestricted traditional pointers are not memory-safe in OCaml because the garbage collector moves heap objects and must track their liveness.
               </p><p>
-                This talk discusses how a lightweight language feature—polymorphic <i>indices</i> into data—allows on- and off-heap pointers to be safely and uniformly implemented as a two-word data structure. Indices are typed like a "Lens" (with type parameters corresponding to a base and element type), but are byte offsets at runtime.
+                This talk discusses how a lightweight language feature—polymorphic <i>indices</i> into data—allows on- and off-heap pointers to be safely and uniformly implemented as a two-word data structure. Indices are typed like a lens (with type parameters corresponding to a base and element type), but are byte offsets at runtime.
               </p><p>
                 We implemented this in OxCaml, an experimental branch of OCaml that also serves as Jane Street’s production compiler. We touch on how OxCaml’s existing extensions, namely, unboxed types and the mode system, extend the functionality of pointers and indices.
               </p>
